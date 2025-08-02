@@ -13,7 +13,7 @@ void draw_background(lv_obj_t* canvas, unsigned index) {
     lv_draw_img_dsc_t img_dsc;
     lv_draw_img_dsc_init(&img_dsc);
 
-    switch (index % 7) {
+    switch (index % 32) {
         case 0: {
             lv_canvas_draw_img(canvas, 0, 0, &background_0, &img_dsc);
             break;
@@ -42,5 +42,114 @@ void draw_background(lv_obj_t* canvas, unsigned index) {
             lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
             break;
         }
+        case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+        case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+        case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+        case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 7: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_7, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+case 6: {
+            lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
+            break;
+        }
+
     }
 }
