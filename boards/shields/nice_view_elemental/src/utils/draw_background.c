@@ -8,6 +8,31 @@
 #include "../../include/images/background_4.h"
 #include "../../include/images/background_5.h"
 #include "../../include/images/background_6.h"
+#include "../../include/images/background_7.h"
+#include "../../include/images/background_8.h"
+#include "../../include/images/background_9.h"
+#include "../../include/images/background_10.h"
+#include "../../include/images/background_11.h"
+#include "../../include/images/background_12.h"
+#include "../../include/images/background_13.h"
+#include "../../include/images/background_14.h"
+#include "../../include/images/background_15.h"
+#include "../../include/images/background_16.h"
+#include "../../include/images/background_17.h"
+#include "../../include/images/background_18.h"
+#include "../../include/images/background_19.h"
+#include "../../include/images/background_20.h"
+#include "../../include/images/background_21.h"
+#include "../../include/images/background_22.h"
+#include "../../include/images/background_23.h"
+#include "../../include/images/background_24.h"
+#include "../../include/images/background_25.h"
+#include "../../include/images/background_26.h"
+#include "../../include/images/background_27.h"
+#include "../../include/images/background_28.h"
+#include "../../include/images/background_29.h"
+#include "../../include/images/background_30.h"
+#include "../../include/images/background_31.h"
 
 void draw_background(lv_obj_t* canvas, unsigned index) {
     lv_draw_img_dsc_t img_dsc;
@@ -42,19 +67,19 @@ void draw_background(lv_obj_t* canvas, unsigned index) {
             lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
             break;
         }
-        case 6: {
+        case 7: {
             lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
             break;
         }
-        case 6: {
+        case 8: {
             lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
             break;
         }
-        case 6: {
+        case 9: {
             lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
             break;
         }
-        case 6: {
+        case 10: {
             lv_canvas_draw_img(canvas, 0, 0, &background_6, &img_dsc);
             break;
         }
