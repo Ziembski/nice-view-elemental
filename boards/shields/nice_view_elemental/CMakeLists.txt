@@ -11,6 +11,33 @@ if(CONFIG_ZMK_DISPLAY AND CONFIG_NICE_VIEW_WIDGET_STATUS)
     ./src/images/background_4.c
     ./src/images/background_5.c
     ./src/images/background_6.c
+    ./src/images/background_7.c
+    ./src/images/background_8.c
+    ./src/images/background_9.c
+    ./src/images/background_10.c
+    ./src/images/background_11.c
+    ./src/images/background_12.c
+    ./src/images/background_13.c
+    ./src/images/background_14.c
+    ./src/images/background_15.c
+    ./src/images/background_16.c
+    ./src/images/background_17.c
+    ./src/images/background_18.c
+    ./src/images/background_19.c
+    ./src/images/background_20.c
+    ./src/images/background_21.c
+    ./src/images/background_22.c
+    ./src/images/background_23.c
+    ./src/images/background_24.c
+    ./src/images/background_25.c
+    ./src/images/background_26.c
+    ./src/images/background_27.c
+    ./src/images/background_28.c
+    ./src/images/background_29.c
+    ./src/images/background_30.c
+    ./src/images/background_31.c
+    
+
     ./src/images/bluetooth_logo_outlined.c
     ./src/images/bluetooth_logo.c
     ./src/images/bluetooth_searching.c
