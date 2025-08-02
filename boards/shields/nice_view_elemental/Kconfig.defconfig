@@ -38,7 +38,7 @@ if SHIELD_NICE_VIEW_ELEMENTAL
 
     config NICE_VIEW_ELEMENTAL_ANIMATION_FRAME_MS
         int "Frame delay for the animation, in milliseconds."
-        default 250
+        default 160
 
     config NICE_VIEW_ELEMENTAL_CAPITALIZATION
         bool "Enables full capitalization for the layer name."
