@@ -11,7 +11,7 @@
 #endif
 
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BACKGROUND_X uint8_t background_X_map[] = {
-  0x00, 0x00, 0x00, 0xff, 	/*Color of index 0*/
+  0xfe, 0xfe, 0xfe, 0xff, 	/*Color of index 0*/
   0x00, 0x00, 0x00, 0x00, 	/*Color of index 1*/
 
 
