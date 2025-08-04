@@ -2,4 +2,4 @@
 
 #include <lvgl.h>
 
-void draw_background(lv_obj_t* canvas, unsigned index);
+void draw_background_X(lv_obj_t* canvas, unsigned index);
