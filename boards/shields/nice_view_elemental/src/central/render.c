@@ -107,7 +107,7 @@ void render_main() {
     // Magic number. The height of the font from the baseline to the ascender
     // height is 34px, but halving the space remaining of the full height gives
     // us another value ((68px - 34px) / 2 = 17px). 
-    static const unsigned text_y_offset = 5;
+    static const unsigned text_y_offset = -5;
 
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_OUTLINE)
     lv_draw_label_dsc_t outline_dsc;
