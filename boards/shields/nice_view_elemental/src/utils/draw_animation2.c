@@ -4,7 +4,7 @@
 #include "../../include/images/animation2_1.h"
 
 
-void draw_draw_animation2(lv_obj_t* canvas, unsigned index) {
+void draw_animation2(lv_obj_t* canvas, unsigned index) {
     lv_draw_img_dsc_t img_dsc;
     lv_draw_img_dsc_init(&img_dsc);
 
