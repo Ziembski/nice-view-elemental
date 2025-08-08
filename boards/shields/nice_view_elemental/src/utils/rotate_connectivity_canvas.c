@@ -18,7 +18,7 @@ void rotate_connectivity_canvas() {
     lv_canvas_transform(
         connectivity_canvas,
         &img,
-        900, LV_IMG_ZOOM_NONE,
+        1800, LV_IMG_ZOOM_NONE,
         -1, 0,
         CONNECTIVITY_CANVAS_WIDTH / 2, CONNECTIVITY_CANVAS_HEIGHT / 2,
         false
