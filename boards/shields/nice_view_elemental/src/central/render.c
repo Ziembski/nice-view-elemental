@@ -82,7 +82,7 @@ void render_connectivity() {
 
 void render_main() {	
 
-    rotate_main_canvas();
+
 	
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_BACKGROUND)
     // Unfortunately, text transparency does not seem to work in LVGL 8.3. This
@@ -90,6 +90,8 @@ void render_main() {
     // on a layer underneath.
     draw_animation2(main_canvas, states.background_index);
 #endif
+
+   rotate_main_canvas();
 
     // Capitalize the layer name if given or use the layer number otherwise.
     char* text = NULL;
@@ -165,5 +167,5 @@ void render_main() {
     text = NULL;
     
 
-   rotate_main_canvas();
+
 }
