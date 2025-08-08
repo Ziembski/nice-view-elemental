@@ -91,8 +91,6 @@ void render_main() {
     draw_animation2(main_canvas, states.background_index);
 #endif
 
-   rotate_main_canvas();
-
     // Capitalize the layer name if given or use the layer number otherwise.
     char* text = NULL;
     if (states.layer.name == NULL) {
