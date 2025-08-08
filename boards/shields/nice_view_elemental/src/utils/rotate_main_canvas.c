@@ -11,12 +11,12 @@ void rotate_main_canvas() {
     lv_img_dsc_t img;
     img.data = (void*)cbuf_tmp;
     img.header.cf = LV_IMG_CF_TRUE_COLOR;
-    img.header.w = main_CANVAS_WIDTH;
-    img.header.h = main_CANVAS_HEIGHT;
+    img.header.w = MAIN_CANVAS_WIDTH;
+    img.header.h = MAIN_CANVAS_HEIGHT;
 
     lv_canvas_fill_bg(main_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
     lv_canvas_transform(
-        nain_canvas,
+        main_canvas,
         &img,
         900, LV_IMG_ZOOM_NONE,
         -1, 0,
