@@ -1,3 +1,3 @@
 #pragma once
 
-void rotate_main_canvas();
+void rotate_layer_canvas();
