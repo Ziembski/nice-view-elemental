@@ -4,7 +4,7 @@
 #include "../../include/main.h"
 #include "../../include/colors.h"
 
-void rotate_main_canvas() {
+void rotate_layer_canvas() {
     static lv_color_t cbuf_tmp[LV_CANVAS_BUF_SIZE_TRUE_COLOR(MAIN_CANVAS_WIDTH, MAIN_CANVAS_HEIGHT)];
     memcpy(cbuf_tmp, main_canvas_buffer, sizeof(cbuf_tmp));
 
