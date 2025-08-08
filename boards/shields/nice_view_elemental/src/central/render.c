@@ -106,7 +106,7 @@ void render_main() {
     // Magic number. The height of the font from the baseline to the ascender
     // height is 34px, but halving the space remaining of the full height gives
     // us another value ((68px - 34px) / 2 = 17px). 
-    static const unsigned text_y_offset = 0;
+    static const unsigned text_y_offset = 15;
 
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_OUTLINE)
     lv_draw_label_dsc_t outline_dsc;
@@ -148,7 +148,7 @@ void render_main() {
     lv_draw_label_dsc_init(&layer_name_dsc);
     layer_name_dsc.color = FOREGROUND_COLOR;
     layer_name_dsc.font = &custom_font_44;
-    layer_name_dsc.align = LV_TEXT_ALIGN_LEFT;
+    layer_name_dsc.align = LV_TEXT_ALIGN_CENTER;
 
     lv_canvas_draw_text(
         main_canvas,
