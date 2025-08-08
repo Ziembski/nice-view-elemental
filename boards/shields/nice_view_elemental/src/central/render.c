@@ -20,6 +20,7 @@
 #include "../../include/utils/draw_bluetooth_logo.h"
 #include "../../include/utils/draw_usb_logo.h"
 #include "../../include/utils/rotate_connectivity_canvas.h"
+#include "../../include/utils/rotate_main_canvas.h"
 
 void render_battery() {
     lv_canvas_fill_bg(battery_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
@@ -82,6 +83,9 @@ void render_connectivity() {
 }
 
 void render_main() {
+	
+	rotate_main_canvas();
+	
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_BACKGROUND)
     // Unfortunately, text transparency does not seem to work in LVGL 8.3. This
     // forces us to redraw the background on every render instead of having it
