@@ -34,7 +34,7 @@
 #include "../../include/images/animation1_30.h"
 #include "../../include/images/animation1_31.h"
 
-void draw_background(lv_obj_t* canvas, unsigned index) {
+void draw_animation1(lv_obj_t* canvas, unsigned index) {
     lv_draw_img_dsc_t img_dsc;
     lv_draw_img_dsc_init(&img_dsc);
 
