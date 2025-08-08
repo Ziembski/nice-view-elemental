@@ -162,5 +162,5 @@ void render_main() {
     free(text);
     text = NULL;
     
-    rotate_main_canvas();
+//    rotate_main_canvas();
 }
