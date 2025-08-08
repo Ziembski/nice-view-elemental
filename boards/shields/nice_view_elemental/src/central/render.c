@@ -81,6 +81,9 @@ void render_connectivity() {
 }
 
 void render_main() {	
+
+    rotate_main_canvas();
+	
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_BACKGROUND)
     // Unfortunately, text transparency does not seem to work in LVGL 8.3. This
     // forces us to redraw the background on every render instead of having it
