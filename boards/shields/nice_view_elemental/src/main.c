@@ -77,11 +77,12 @@ lv_obj_t* zmk_display_status_screen() {
         MAIN_CANVAS_HEIGHT,
         LV_IMG_CF_TRUE_COLOR
     );
+	
 #if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 	
     // Create the main2 canvas to be used in the `render_main2` function.
     main2_canvas = lv_canvas_create(screen);
-    lv_obj_align(main2_canvas, LV_ALIGN_TOP_LEFT, 0, 0);
+    lv_obj_align(main2_canvas, LV_ALIGN_TOP_RIGHT, BATTERY_CANVAS_WIDTH, MAIN2_CANVAS_WIDTH / 2 - 8);
     lv_canvas_set_buffer(
         main2_canvas,
         main2_canvas_buffer,
