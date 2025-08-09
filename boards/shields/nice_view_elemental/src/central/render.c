@@ -102,6 +102,7 @@ void render_main() {
 }
 
 
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 
 void render_main2() {	
 
@@ -161,8 +162,6 @@ void render_main2() {
 
     free(text);
     text = NULL;
-    
-
-
 
 }
+#endif
