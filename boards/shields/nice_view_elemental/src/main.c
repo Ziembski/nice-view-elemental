@@ -77,6 +77,7 @@ lv_obj_t* zmk_display_status_screen() {
         MAIN_CANVAS_HEIGHT,
         LV_IMG_CF_TRUE_COLOR
     );
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 	
     // Create the main2 canvas to be used in the `render_main2` function.
     main2_canvas = lv_canvas_create(screen);
@@ -88,6 +89,8 @@ lv_obj_t* zmk_display_status_screen() {
         MAIN2_CANVAS_HEIGHT,
         LV_IMG_CF_TRUE_COLOR
     );
+#endif
+
 	
     // Depending on which half the build is for, the implementation will differ.
     initialize_listeners();
