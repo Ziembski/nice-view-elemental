@@ -88,17 +88,19 @@ void render_connectivity() {
 
 void render_main() {	
 
-
-	
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_BACKGROUND)
-    // Unfortunately, text transparency does not seem to work in LVGL 8.3. This
-    // forces us to redraw the background on every render instead of having it
-    // on a layer underneath.
-    draw_animation2(main_canvas, states.background_index);
+
+	#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+
+		draw_animation1(main_canvas, states.background_index);
+
+	#else
+		
+		draw_animation2(main_canvas, states.background_index);
+
+	#endif
+
 #endif
-
-
-
 }
 
 
