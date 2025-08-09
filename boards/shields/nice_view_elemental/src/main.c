@@ -82,7 +82,7 @@ lv_obj_t* zmk_display_status_screen() {
 
     // Create the layer canvas to be used in the `render_layer` function.
     layer_canvas = lv_canvas_create(screen);
-    lv_obj_align(layer_canvas, LV_ALIGN_TOP_RIGHT, BATTERY_CANVAS_WIDTH, 0);
+    lv_obj_align(layer_canvas, LV_ALIGN_TOP_RIGHT, BATTERY_CANVAS_WIDTH, 34);
     lv_canvas_set_buffer(
         layer_canvas,
         layer_canvas_buffer,
