@@ -28,14 +28,6 @@ lv_color_t main_canvas_buffer[
     )
 ];
 
-lv_obj_t* tlayer_canvas;
-lv_color_t tlayer_canvas_buffer[
-    LV_CANVAS_BUF_SIZE_TRUE_COLOR(
-        TLAYER_CANVAS_WIDTH,
-        TLAYER_CANVAS_HEIGHT
-    )
-];
-
 
 
 // ZMK calls this function directly in `app/src/display/main.c` of its source
@@ -80,23 +72,6 @@ lv_obj_t* zmk_display_status_screen() {
         LV_IMG_CF_TRUE_COLOR
     );
 	
-#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
-#endif
-
-    // Create the tlayer canvas to be used in the `render_layer` function.
-    tlayer_canvas = lv_canvas_create(screen);
-    lv_obj_align(tlayer_canvas, LV_ALIGN_TOP_RIGHT, BATTERY_CANVAS_WIDTH, 26);
-    lv_canvas_set_buffer(
-        tlayer_canvas,
-        tlayer_canvas_buffer,
-        TLAYER_CANVAS_WIDTH,
-        TLAYER_CANVAS_HEIGHT,
-        LV_IMG_CF_TRUE_COLOR
-    );
-
-
-
-
 
     // Depending on which half the build is for, the implementation will differ.
     initialize_listeners();

@@ -20,7 +20,7 @@
 #include "../../include/utils/draw_bluetooth_logo.h"
 #include "../../include/utils/draw_usb_logo.h"
 #include "../../include/utils/rotate_connectivity_canvas.h"
-#include "../../include/utils/rotate_tlayer_canvas.h"
+
 
 void render_battery() {
     lv_canvas_fill_bg(battery_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
@@ -171,10 +171,4 @@ void render_main() {
     
 
 
-}
-
-
-
-void render_tlayer() {
-    lv_canvas_fill_bg(tlayer_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
 }
