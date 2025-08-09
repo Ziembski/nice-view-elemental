@@ -30,8 +30,9 @@ extern lv_color_t battery_canvas_buffer[];
 extern lv_obj_t* connectivity_canvas;
 extern lv_color_t connectivity_canvas_buffer[];
 
+extern lv_obj_t* layer_canvas;
+extern lv_color_t layer_canvas_buffer[];
+
 extern lv_obj_t* main_canvas;
 extern lv_color_t main_canvas_buffer[];
 
-extern lv_obj_t* layer_canvas;
-extern lv_color_t layer_canvas_buffer[];
