@@ -9,6 +9,7 @@
 #define SCREEN_HEIGHT 68
 
 #define TOP_WIDTH 25
+#define MAIN2_WIDTH 25
 
 #define BATTERY_CANVAS_WIDTH (TOP_WIDTH)
 #define BATTERY_CANVAS_HEIGHT (SCREEN_HEIGHT / 2)
@@ -20,8 +21,8 @@
 #define MAIN_CANVAS_WIDTH (SCREEN_WIDTH - TOP_WIDTH)
 #define MAIN_CANVAS_HEIGHT (SCREEN_HEIGHT)
 
-#define MAIN2_CANVAS_WIDTH (SCREEN_WIDTH - TOP_WIDTH)
-#define MAIN2_CANVAS_HEIGHT (SCREEN_HEIGHT)
+#define MAIN2_CANVAS_WIDTH (SCREEN_HEIGHT)
+#define MAIN2_CANVAS_HEIGHT (MAIN2_WIDTH)
 
 extern lv_obj_t* battery_canvas;
 extern lv_color_t battery_canvas_buffer[];

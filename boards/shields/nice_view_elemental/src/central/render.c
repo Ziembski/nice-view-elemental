@@ -125,25 +125,7 @@ void render_main2() {
     // Magic number. The height of the font from the baseline to the ascender
     // height is 34px, but halving the space remaining of the full height gives
     // us another value ((68px - 34px) / 2 = 17px). 
-    static const unsigned text_y_offset = 15;
-
-
-#if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_SHADOW)
-    lv_draw_label_dsc_t shadow_dsc;
-    lv_draw_label_dsc_init(&shadow_dsc);
-    shadow_dsc.color = BACKGROUND_COLOR;
-    shadow_dsc.font = &custom_font_shadow;
-    shadow_dsc.align = LV_TEXT_ALIGN_CENTER;
-
-    lv_canvas_draw_text(
-        main2_canvas,
-        0,
-        text_y_offset,
-        MAIN2_CANVAS_WIDTH,
-        &shadow_dsc,
-        text
-    );
-#endif
+    static const unsigned text_y_offset = 0;
 
     lv_draw_label_dsc_t layer_name_dsc;
     lv_draw_label_dsc_init(&layer_name_dsc);
