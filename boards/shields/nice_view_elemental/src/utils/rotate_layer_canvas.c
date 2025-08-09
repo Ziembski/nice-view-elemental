@@ -20,7 +20,7 @@ void rotate_layer_canvas() {
         &img,
         900, LV_IMG_ZOOM_NONE,
         0, 0,
-        0, 0,
+        LAYER_CANVAS_WIDTH / 2, LAYER_CANVAS_HEIGHT / 2,
         false
     );
 }
