@@ -83,9 +83,9 @@ void render_connectivity() {
 
 
 void render_layer() {
-    lv_canvas_fill_bg(layer_canvas, FOREGROUND_COLOR, LV_OPA_COVER);
+    lv_canvas_fill_bg(layer_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
 
-    rotate_layer_canvas();
+    draw_battery(layer_canvas, 7, 4, states.battery);
 }
 
 
