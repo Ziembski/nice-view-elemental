@@ -96,7 +96,16 @@ void render_main() {
     draw_animation2(main_canvas, states.background_index);
 #endif
 
-    // Capitalize the layer name if given or use the layer number otherwise.
+
+
+}
+
+
+
+void render_main2() {	
+
+
+	    // Capitalize the layer name if given or use the layer number otherwise.
     char* text = NULL;
     if (states.layer.name == NULL) {
         text = malloc(10 * sizeof(char));
@@ -123,12 +132,12 @@ void render_main() {
     outline_dsc.align = LV_TEXT_ALIGN_CENTER;
 
     lv_canvas_draw_text(
-        main_canvas,
+        main2_canvas,
         0,
         // Magic number offset. We would think that the fonts would line up
         // perfectly, because of how they were created, but no.
         text_y_offset - 1,
-        MAIN_CANVAS_WIDTH,
+        MAIN2_CANVAS_WIDTH,
         &outline_dsc,
         text
     );
@@ -142,10 +151,10 @@ void render_main() {
     shadow_dsc.align = LV_TEXT_ALIGN_CENTER;
 
     lv_canvas_draw_text(
-        main_canvas,
+        main2_canvas,
         0,
         text_y_offset,
-        MAIN_CANVAS_WIDTH,
+        MAIN2_CANVAS_WIDTH,
         &shadow_dsc,
         text
     );
@@ -158,10 +167,10 @@ void render_main() {
     layer_name_dsc.align = LV_TEXT_ALIGN_CENTER;
 
     lv_canvas_draw_text(
-        main_canvas,
+        main2_canvas,
         0,
         text_y_offset,
-        MAIN_CANVAS_WIDTH,
+        MAIN2_CANVAS_WIDTH,
         &layer_name_dsc,
         text
     );
@@ -169,6 +178,7 @@ void render_main() {
     free(text);
     text = NULL;
     
+
 
 
 }

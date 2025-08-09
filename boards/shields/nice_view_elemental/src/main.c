@@ -28,7 +28,13 @@ lv_color_t main_canvas_buffer[
     )
 ];
 
-
+lv_obj_t* main2_canvas;
+lv_color_t main2_canvas_buffer[
+    LV_CANVAS_BUF_SIZE_TRUE_COLOR(
+        MAIN2_CANVAS_WIDTH,
+        MAIN2_CANVAS_HEIGHT
+    )
+];
 
 // ZMK calls this function directly in `app/src/display/main.c` of its source
 // code.
@@ -72,7 +78,17 @@ lv_obj_t* zmk_display_status_screen() {
         LV_IMG_CF_TRUE_COLOR
     );
 	
-
+    // Create the main2 canvas to be used in the `render_main2` function.
+    main2_canvas = lv_canvas_create(screen);
+    lv_obj_align(main2_canvas, LV_ALIGN_TOP_LEFT, 0, 0);
+    lv_canvas_set_buffer(
+        main2_canvas,
+        main2_canvas_buffer,
+        MAIN2_CANVAS_WIDTH,
+        MAIN2_CANVAS_HEIGHT,
+        LV_IMG_CF_TRUE_COLOR
+    );
+	
     // Depending on which half the build is for, the implementation will differ.
     initialize_listeners();
 
