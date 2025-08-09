@@ -135,7 +135,7 @@ void render_main2() {
     free(text);
     text = NULL;
 	
-//	rotate_main2_canvas();
+	rotate_main2_canvas();
  
 }
 #endif
