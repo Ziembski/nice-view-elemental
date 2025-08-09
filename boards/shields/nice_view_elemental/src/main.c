@@ -1,4 +1,5 @@
 #include "../include/main.h"
+#include <zephyr/kernel.h>
 
 #include <lvgl.h>
 #include "../include/initialize_listeners.h"

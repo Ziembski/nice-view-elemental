@@ -1,6 +1,7 @@
 #pragma once
 
 #include <zmk/display/status_screen.h>
+#include <zmk/endpoints.h>
 
 #include <lvgl.h>
 
