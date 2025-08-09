@@ -20,7 +20,7 @@
 #include "../../include/utils/draw_bluetooth_logo.h"
 #include "../../include/utils/draw_usb_logo.h"
 #include "../../include/utils/rotate_connectivity_canvas.h"
-#include "../../include/utils/rotate_layer_canvas.h"
+#include "../../include/utils/rotate_tlayer_canvas.h"
 
 void render_battery() {
     lv_canvas_fill_bg(battery_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
@@ -82,14 +82,7 @@ void render_connectivity() {
     rotate_connectivity_canvas();
 }
 
-#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 
-
-void render_layer() {
-    lv_canvas_fill_bg(layer_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
-}
-
-#endif
 
 
 void render_main() {	
@@ -179,3 +172,12 @@ void render_main() {
 
 
 }
+
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+
+
+void render_tlayer() {
+    lv_canvas_fill_bg(tlayer_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
+}
+
+#endif
