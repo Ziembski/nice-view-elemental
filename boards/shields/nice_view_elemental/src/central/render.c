@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <zephyr/sys/util.h>
+#include <zephyr/kernel.h>
 #include "../../include/colors.h"
 #include "../../include/central/initialize_listeners.h"
 #include "../../include/fonts/custom_font_22.h"
@@ -81,10 +82,14 @@ void render_connectivity() {
     rotate_connectivity_canvas();
 }
 
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+
 
 void render_layer() {
     lv_canvas_fill_bg(layer_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
 }
+
+#endif
 
 
 void render_main() {	
