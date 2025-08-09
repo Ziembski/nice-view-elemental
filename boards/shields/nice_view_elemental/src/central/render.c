@@ -21,6 +21,7 @@
 #include "../../include/utils/draw_bluetooth_logo.h"
 #include "../../include/utils/draw_usb_logo.h"
 #include "../../include/utils/rotate_connectivity_canvas.h"
+#include "../../include/utils/rotate_main2_canvas.h"
 
 
 void render_battery() {
@@ -138,6 +139,9 @@ void render_main2() {
 
     free(text);
     text = NULL;
-
+	
+	rotate_main2_canvas();
+ 
+ 
 }
 #endif

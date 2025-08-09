@@ -82,7 +82,7 @@ lv_obj_t* zmk_display_status_screen() {
 	
     // Create the main2 canvas to be used in the `render_main2` function.
     main2_canvas = lv_canvas_create(screen);
-    lv_obj_align(main2_canvas, LV_ALIGN_TOP_RIGHT, -BATTERY_CANVAS_WIDTH - MAIN2_CANVAS_HEIGHT, MAIN2_CANVAS_WIDTH / 2 - 8);
+    lv_obj_align(main2_canvas, LV_ALIGN_TOP_RIGHT, -BATTERY_CANVAS_WIDTH, MAIN2_CANVAS_WIDTH / 2 - 8);
     lv_canvas_set_buffer(
         main2_canvas,
         main2_canvas_buffer,
