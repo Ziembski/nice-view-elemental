@@ -80,6 +80,53 @@ void render_connectivity() {
     rotate_connectivity_canvas();
 }
 
+
+void render_layer() {
+    lv_canvas_fill_bg(layer_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
+
+
+    // Capitalize the layer name if given or use the layer number otherwise.
+    char* text = NULL;
+    if (states.layer.name == NULL) {
+        text = malloc(10 * sizeof(char));
+        sprintf(text, "LAYER %i", states.layer.index);
+    }
+    else {
+        text = malloc((strlen(states.layer.name) + 1) * sizeof(char));
+        for (unsigned i = 0; states.layer.name[i] != '\0'; i++) {
+            text[i] = toupper(states.layer.name[i]);
+        }
+        text[strlen(states.layer.name)] = '\0';
+    }
+
+    // Magic number. The height of the font from the baseline to the ascender
+    // height is 34px, but halving the space remaining of the full height gives
+    // us another value ((68px - 34px) / 2 = 17px). 
+    static const unsigned text_y_offset = 1;
+
+    lv_draw_label_dsc_t layer_name_dsc;
+    lv_draw_label_dsc_init(&layer_name_dsc);
+    layer_name_dsc.color = FOREGROUND_COLOR;
+    layer_name_dsc.font = &custom_font_22;
+    layer_name_dsc.align = LV_TEXT_ALIGN_CENTER;
+
+    lv_canvas_draw_text(
+        layer_canvas,
+        0,
+        text_y_offset,
+        LAYER_CANVAS_WIDTH,
+        &layer_name_dsc,
+        text
+    );
+
+    free(text);
+    text = NULL;
+
+
+    rotate_layer_canvas();
+}
+
+
 void render_main() {	
 
 
