@@ -42,6 +42,20 @@ lv_obj_t* zmk_display_status_screen() {
     // Setup the base screen.
     lv_obj_t* screen = lv_obj_create(NULL);
     lv_obj_set_size(screen, SCREEN_WIDTH, SCREEN_HEIGHT);
+	
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+	
+    // Create the main2 canvas to be used in the `render_main2` function.
+    main2_canvas = lv_canvas_create(screen);
+    lv_obj_align(main2_canvas, LV_ALIGN_TOP_RIGHT, 0, 0);
+    lv_canvas_set_buffer(
+        main2_canvas,
+        main2_canvas_buffer,
+        MAIN2_CANVAS_WIDTH,
+        MAIN2_CANVAS_HEIGHT,
+        LV_IMG_CF_TRUE_COLOR
+    );
+#endif
 
     // Create the battery canvas to be used in the `render_battery` function.
     battery_canvas = lv_canvas_create(screen);
@@ -78,19 +92,7 @@ lv_obj_t* zmk_display_status_screen() {
         LV_IMG_CF_TRUE_COLOR
     );
 	
-#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
-	
-    // Create the main2 canvas to be used in the `render_main2` function.
-    main2_canvas = lv_canvas_create(screen);
-    lv_obj_align(main2_canvas, LV_ALIGN_TOP_RIGHT, -20, 0);
-    lv_canvas_set_buffer(
-        main2_canvas,
-        main2_canvas_buffer,
-        MAIN2_CANVAS_WIDTH,
-        MAIN2_CANVAS_HEIGHT,
-        LV_IMG_CF_TRUE_COLOR
-    );
-#endif
+
 
 	
     // Depending on which half the build is for, the implementation will differ.
