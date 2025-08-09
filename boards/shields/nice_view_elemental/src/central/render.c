@@ -101,10 +101,6 @@ void render_main() {
 
 void render_main2() {	
 
-
-	rotate_main2_canvas();
-	
-	
     lv_canvas_fill_bg(main2_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
 
 	    // Capitalize the layer name if given or use the layer number otherwise.
@@ -144,8 +140,7 @@ void render_main2() {
     free(text);
     text = NULL;
 	
-
- 
+	rotate_main2_canvas();
  
 }
 #endif
