@@ -180,7 +180,7 @@ ZMK_SUBSCRIPTION(
 static void layer_state_update_callback(struct layer_state state) {
     states.layer = state;
 
-    render_main();
+    render_main2();
 }
 
 // Retrieve the data we want from the event
