@@ -383,7 +383,7 @@ static const lv_font_fmt_txt_glyph_dsc_t glyph_dsc[] = {
     {.bitmap_index = 279, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 287, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 295, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
-    {.bitmap_index = 303, .adv_w = 90, .box_w = 2, .box_h = 10, .ofs_x = 2, .ofs_y = 0},
+    {.bitmap_index = 303, .adv_w = 60, .box_w = 2, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 306, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 314, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 322, .adv_w = 90, .box_w = 4, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
@@ -415,7 +415,7 @@ static const lv_font_fmt_txt_glyph_dsc_t glyph_dsc[] = {
     {.bitmap_index = 524, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 532, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 540, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
-    {.bitmap_index = 548, .adv_w = 90, .box_w = 2, .box_h = 10, .ofs_x = 2, .ofs_y = 0},
+    {.bitmap_index = 548, .adv_w = 60, .box_w = 2, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 551, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 559, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 567, .adv_w = 90, .box_w = 4, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
@@ -438,7 +438,6 @@ static const lv_font_fmt_txt_glyph_dsc_t glyph_dsc[] = {
     {.bitmap_index = 715, .adv_w = 120, .box_w = 6, .box_h = 10, .ofs_x = 0, .ofs_y = 0},
     {.bitmap_index = 723, .adv_w = 180, .box_w = 9, .box_h = 6, .ofs_x = 0, .ofs_y = 2}
 };
-
 
 /*---------------------
  *  CHARACTER MAPPING
