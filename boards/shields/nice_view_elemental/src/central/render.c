@@ -126,7 +126,7 @@ void render_main2() {
     lv_canvas_draw_text(
         main2_canvas,
         0,
-        56,
+        54,
         MAIN2_CANVAS_WIDTH,
         &layer_name_dsc,
         text
