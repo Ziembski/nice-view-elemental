@@ -127,7 +127,7 @@ void render_main2() {
         main2_canvas,
         0,
         0,
-        MAIN2_CANVAS_HEIGHT,
+        MAIN2_CANVAS_WIDTH,
         &layer_name_dsc,
         text
     );
@@ -135,7 +135,7 @@ void render_main2() {
     free(text);
     text = NULL;
 	
-	rotate_main2_canvas();
+//	rotate_main2_canvas();
  
 }
 #endif
