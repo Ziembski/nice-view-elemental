@@ -90,15 +90,7 @@ void render_main() {
 
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_BACKGROUND)
 
-	#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
-
 		draw_animation1(main_canvas, states.background_index);
-
-	#else
-		
-		draw_animation2(main_canvas, states.background_index);
-
-	#endif
 
 #endif
 }
