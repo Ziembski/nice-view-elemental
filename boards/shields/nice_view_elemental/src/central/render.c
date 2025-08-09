@@ -173,11 +173,8 @@ void render_main() {
 
 }
 
-#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 
 
 void render_tlayer() {
     lv_canvas_fill_bg(tlayer_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
 }
-
-#endif

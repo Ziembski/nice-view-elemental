@@ -81,6 +81,7 @@ lv_obj_t* zmk_display_status_screen() {
     );
 	
 #if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+#endif
 
     // Create the tlayer canvas to be used in the `render_layer` function.
     tlayer_canvas = lv_canvas_create(screen);
@@ -93,7 +94,7 @@ lv_obj_t* zmk_display_status_screen() {
         LV_IMG_CF_TRUE_COLOR
     );
 
-#endif
+
 
 
 
