@@ -1,7 +1,7 @@
 #include "../../include/utils/draw_animation2.h"
 
 #include <lvgl.h>
-#include "../../include/images/debug.h"
+#include "../../include/images/animation2_1.h"
 
 
 void draw_animation2(lv_obj_t* canvas, unsigned index) {
