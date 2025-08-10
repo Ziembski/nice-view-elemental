@@ -90,7 +90,7 @@ void render_main() {
 
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_BACKGROUND)
 
-		draw_animation2(main_canvas, states.background_index);
+		draw_animation1(main_canvas, states.background_index);
 
 #endif
 }
