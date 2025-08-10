@@ -59,7 +59,7 @@ lv_obj_t* zmk_display_status_screen() {
 	
     // Create the main2 canvas to be used in the `render_main2` function.
     main2_canvas = lv_canvas_create(screen);
-    lv_obj_align(main2_canvas, LV_ALIGN_TOP_RIGHT, 31, 0);
+    lv_obj_align(main2_canvas, LV_ALIGN_TOP_RIGHT, 34, 0);
     lv_canvas_set_buffer(
         main2_canvas,
         main2_canvas_buffer,
@@ -71,7 +71,7 @@ lv_obj_t* zmk_display_status_screen() {
 
     // Create the battery canvas to be used in the `render_battery` function.
     battery_canvas = lv_canvas_create(screen);
-    lv_obj_align(battery_canvas, LV_ALIGN_TOP_RIGHT, 0, 0);
+    lv_obj_align(battery_canvas, LV_ALIGN_TOP_RIGHT, 3, 0);
     lv_canvas_set_buffer(
         battery_canvas,
         battery_canvas_buffer,
@@ -82,7 +82,7 @@ lv_obj_t* zmk_display_status_screen() {
     
     // Create the info canvas to be used in the `render_connectivity` function.
     connectivity_canvas = lv_canvas_create(screen);
-    lv_obj_align(connectivity_canvas, LV_ALIGN_BOTTOM_RIGHT, 10, 0);
+    lv_obj_align(connectivity_canvas, LV_ALIGN_BOTTOM_RIGHT, 13, 0);
     lv_canvas_set_buffer(
         connectivity_canvas,
         connectivity_canvas_buffer,
