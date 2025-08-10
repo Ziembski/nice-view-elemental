@@ -46,11 +46,10 @@ static void render_bluetooth_profile_index() {
     lv_draw_label_dsc_t label_dsc;
     lv_draw_label_dsc_init(&label_dsc);
     label_dsc.color = FOREGROUND_COLOR;
-    label_dsc.font = &custom_font_22;
+    label_dsc.font = &pixel_custom;
     label_dsc.align = LV_TEXT_ALIGN_RIGHT;
 
     static const unsigned custom_font_22_height = 19;
-    static const unsigned padding_y = (CONNECTIVITY_CANVAS_AVAILABLE_HEIGHT - custom_font_22_height) / 2;
     static const unsigned width = CONNECTIVITY_CANVAS_WIDTH - 18;
     static const char bluetooth_profile_label[5][2] = {"1", "2", "3", "4", "5"};
     const char* label = bluetooth_profile_label[states.connectivity.active_profile_index];
@@ -126,7 +125,7 @@ void render_main2() {
     lv_canvas_draw_text(
         main2_canvas,
         0,
-        54,
+        53,
         MAIN2_CANVAS_WIDTH,
         &layer_name_dsc,
         text
