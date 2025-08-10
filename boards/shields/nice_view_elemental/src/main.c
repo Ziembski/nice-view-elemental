@@ -4,6 +4,8 @@
 #include <lvgl.h>
 #include "../include/initialize_listeners.h"
 
+#define TOP_WIDTH 25
+
 lv_obj_t* battery_canvas;
 lv_color_t battery_canvas_buffer[
     LV_CANVAS_BUF_SIZE_TRUE_COLOR(
@@ -45,7 +47,7 @@ lv_obj_t* zmk_display_status_screen() {
 	
 	// Create the main canvas to be used in the `render_main` function.
     main_canvas = lv_canvas_create(screen);
-    lv_obj_align(main_canvas, LV_ALIGN_TOP_LEFT, 0, 0);
+    lv_obj_align(main_canvas, LV_ALIGN_TOP_RIGHT, 0, 0);
     lv_canvas_set_buffer(
         main_canvas,
         main_canvas_buffer,

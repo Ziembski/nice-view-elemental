@@ -21,9 +21,9 @@ void render_connectivity() {
     lv_canvas_fill_bg(connectivity_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
 
     if (states.connectivity.connected) {
-        draw_bluetooth_logo(connectivity_canvas, 18, 15);
+        draw_bluetooth_logo(connectivity_canvas, 18, 25);
     } else {
-        draw_bluetooth_logo_outlined(connectivity_canvas, 18, 15);
+        draw_bluetooth_logo_outlined(connectivity_canvas, 18, 25);
     }
 
     rotate_connectivity_canvas();

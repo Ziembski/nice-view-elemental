@@ -38,7 +38,7 @@ if(CONFIG_ZMK_DISPLAY AND CONFIG_NICE_VIEW_WIDGET_STATUS)
     ./src/images/animation1_30.c
     ./src/images/animation1_31.c
     ./src/images/animation2_1.c    
-
+    ./src/images/debug.c  
     ./src/images/bluetooth_logo_outlined.c
     ./src/images/bluetooth_logo.c
     ./src/images/bluetooth_searching.c

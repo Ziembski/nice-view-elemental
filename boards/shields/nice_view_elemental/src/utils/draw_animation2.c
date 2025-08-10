@@ -1,7 +1,7 @@
 #include "../../include/utils/draw_animation2.h"
 
 #include <lvgl.h>
-#include "../../include/images/animation2_1.h"
+#include "../../include/images/debug.h"
 
 
 void draw_animation2(lv_obj_t* canvas, unsigned index) {
@@ -10,7 +10,7 @@ void draw_animation2(lv_obj_t* canvas, unsigned index) {
 
     switch (index % 1) {
         case 0: {
-            lv_canvas_draw_img(canvas, 0, 0, &animation2_1, &img_dsc);
+            lv_canvas_draw_img(canvas, 0, 0, &debug, &img_dsc);
             break;
         }
     
