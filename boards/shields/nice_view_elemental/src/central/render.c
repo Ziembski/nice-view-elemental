@@ -33,12 +33,12 @@ void render_battery() {
 static void render_bluetooth_logo() {
     if (states.connectivity.active_profile_bonded) {
         if (states.connectivity.active_profile_connected) {
-            draw_bluetooth_logo(connectivity_canvas, 18, 25);
+            draw_bluetooth_logo(connectivity_canvas, 18, 15);
         } else {
-            draw_bluetooth_logo_outlined(connectivity_canvas, 18,  25);
+            draw_bluetooth_logo_outlined(connectivity_canvas, 18,  15);
         }
     } else {
-        draw_bluetooth_searching(connectivity_canvas, 18, 25);
+        draw_bluetooth_searching(connectivity_canvas, 18, 15);
     }
 }
 
