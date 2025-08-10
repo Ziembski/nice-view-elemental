@@ -55,7 +55,7 @@ static void render_bluetooth_profile_index() {
     static const char bluetooth_profile_label[5][2] = {"1", "2", "3", "4", "5"};
     const char* label = bluetooth_profile_label[states.connectivity.active_profile_index];
    
-    lv_canvas_draw_text(connectivity_canvas, 0, padding_y, width, &label_dsc, label);
+    lv_canvas_draw_text(connectivity_canvas, 0, 3, width, &label_dsc, label);
 }
 
 static void render_bluetooth_connectivity() {
@@ -64,7 +64,7 @@ static void render_bluetooth_connectivity() {
 }
 
 static void render_usb_connectivity() {
-    draw_usb_logo(connectivity_canvas, 11, 8);
+    draw_usb_logo(connectivity_canvas, 11, 18);
 }
 
 void render_connectivity() {
