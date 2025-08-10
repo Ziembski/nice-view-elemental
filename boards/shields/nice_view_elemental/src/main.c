@@ -47,9 +47,8 @@ lv_obj_t* zmk_display_status_screen() {
 	
 	
 	// Create the main canvas to be used in the `render_main` function.
-#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
     main_canvas = lv_canvas_create(screen);
-    lv_obj_align(main_canvas, LV_ALIGN_TOP_RIGHT, -34, 0);
+    lv_obj_align(main_canvas, LV_ALIGN_TOP_RIGHT, 0, 0);
     lv_canvas_set_buffer(
         main_canvas,
         main_canvas_buffer,
@@ -57,17 +56,7 @@ lv_obj_t* zmk_display_status_screen() {
         MAIN_CANVAS_HEIGHT,
         LV_IMG_CF_TRUE_COLOR
     );
-#else
-	main_canvas = lv_canvas_create(screen);
-    lv_obj_align(main_canvas, LV_ALIGN_TOP_RIGHT, -20, 0);
-    lv_canvas_set_buffer(
-        main_canvas,
-        main_canvas_buffer,
-        MAIN_CANVAS_WIDTH,
-        MAIN_CANVAS_HEIGHT,
-        LV_IMG_CF_TRUE_COLOR
-    );
-#endif
+
 
 #if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 	
@@ -85,7 +74,7 @@ lv_obj_t* zmk_display_status_screen() {
 
     // Create the battery canvas to be used in the `render_battery` function.
     battery_canvas = lv_canvas_create(screen);
-    lv_obj_align(battery_canvas, LV_ALIGN_TOP_RIGHT, 4, 0);
+    lv_obj_align(battery_canvas, LV_ALIGN_TOP_RIGHT, 5, 0);
     lv_canvas_set_buffer(
         battery_canvas,
         battery_canvas_buffer,

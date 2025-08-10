@@ -14,7 +14,7 @@
 void render_battery() {
     lv_canvas_fill_bg(battery_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
 
-    draw_battery(battery_canvas, 6, 5, states.battery);
+    draw_battery(battery_canvas, 5, 5, states.battery);
 }
 
 void render_connectivity() {
