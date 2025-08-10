@@ -27,18 +27,18 @@
 void render_battery() {
     lv_canvas_fill_bg(battery_canvas, BACKGROUND_COLOR, LV_OPA_COVER);
 
-    draw_battery(battery_canvas, 7, 4, states.battery);
+    draw_battery(battery_canvas, 6, 4, states.battery);
 }
 
 static void render_bluetooth_logo() {
     if (states.connectivity.active_profile_bonded) {
         if (states.connectivity.active_profile_connected) {
-            draw_bluetooth_logo(connectivity_canvas, 18, 14);
+            draw_bluetooth_logo(connectivity_canvas, 18, 15);
         } else {
-            draw_bluetooth_logo_outlined(connectivity_canvas, 18,  14);
+            draw_bluetooth_logo_outlined(connectivity_canvas, 18,  15);
         }
     } else {
-        draw_bluetooth_searching(connectivity_canvas, 18, 14);
+        draw_bluetooth_searching(connectivity_canvas, 18, 15);
     }
 }
 
@@ -54,7 +54,7 @@ static void render_bluetooth_profile_index() {
     static const char bluetooth_profile_label[5][2] = {"1", "2", "3", "4", "5"};
     const char* label = bluetooth_profile_label[states.connectivity.active_profile_index];
    
-    lv_canvas_draw_text(connectivity_canvas, 0, 13, width, &label_dsc, label);
+    lv_canvas_draw_text(connectivity_canvas, 0, 18, width, &label_dsc, label);
 }
 
 static void render_bluetooth_connectivity() {
@@ -63,7 +63,7 @@ static void render_bluetooth_connectivity() {
 }
 
 static void render_usb_connectivity() {
-    draw_usb_logo(connectivity_canvas, 11, 18);
+    draw_usb_logo(connectivity_canvas, 11, 19);
 }
 
 void render_connectivity() {
