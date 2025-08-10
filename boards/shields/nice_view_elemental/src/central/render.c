@@ -54,7 +54,7 @@ static void render_bluetooth_profile_index() {
     static const char bluetooth_profile_label[5][2] = {"1", "2", "3", "4", "5"};
     const char* label = bluetooth_profile_label[states.connectivity.active_profile_index];
    
-    lv_canvas_draw_text(connectivity_canvas, 0, 17, width, &label_dsc, label);
+    lv_canvas_draw_text(connectivity_canvas, 2, 16, width, &label_dsc, label);
 }
 
 static void render_bluetooth_connectivity() {
@@ -90,7 +90,7 @@ void render_main() {
 
 #if IS_ENABLED(CONFIG_NICE_VIEW_ELEMENTAL_BACKGROUND)
 
-		draw_animation1(main_canvas, states.background_index);
+		draw_animation2(main_canvas, states.background_index);
 
 #endif
 }
