@@ -45,10 +45,11 @@ lv_obj_t* zmk_display_status_screen() {
     lv_obj_set_size(screen, SCREEN_WIDTH, SCREEN_HEIGHT);
 	
 	
+#if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 	
 	// Create the main canvas to be used in the `render_main` function.
     main_canvas = lv_canvas_create(screen);
-    lv_obj_align(main_canvas, LV_ALIGN_TOP_RIGHT, 0, 0);
+    lv_obj_align(main_canvas, LV_ALIGN_TOP_LEFT, -14, 0);
     lv_canvas_set_buffer(
         main_canvas,
         main_canvas_buffer,
@@ -56,7 +57,21 @@ lv_obj_t* zmk_display_status_screen() {
         MAIN_CANVAS_HEIGHT,
         LV_IMG_CF_TRUE_COLOR
     );
-
+	
+#else
+	
+	// Create the main canvas to be used in the `render_main` function.
+    main_canvas = lv_canvas_create(screen);
+    lv_obj_align(main_canvas, LV_ALIGN_TOP_LEFT, 0, 0);
+    lv_canvas_set_buffer(
+        main_canvas,
+        main_canvas_buffer,
+        MAIN_CANVAS_WIDTH,
+        MAIN_CANVAS_HEIGHT,
+        LV_IMG_CF_TRUE_COLOR
+    );
+	
+#endif
 
 #if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
 	
