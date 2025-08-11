@@ -1,4 +1,4 @@
-#include "../../include/images/animation2_1.h"
+#include "../../include/images/animation2_Bw3.h"
 
 #include <lvgl.h>
 
