@@ -74,7 +74,7 @@ void draw_animation2(lv_obj_t* canvas, unsigned index) {
     lv_draw_img_dsc_t img_dsc;
     lv_draw_img_dsc_init(&img_dsc);
 
-    switch (index % 36) {
+    switch (index % 140) {
         case 1: {
             lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
             break;
@@ -252,6 +252,477 @@ void draw_animation2(lv_obj_t* canvas, unsigned index) {
 
         case 36: {
             lv_canvas_draw_img(canvas, 0, 0, &animation2_Astanding, &img_dsc);
+            break;
+        }
+
+        case 37: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao1, &img_dsc);
+            break;
+        }
+
+        case 38: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao2, &img_dsc);
+            break;
+        }
+
+        case 39: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao3, &img_dsc);
+            break;
+        }
+
+        case 40: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao4, &img_dsc);
+            break;
+        }
+
+        case 41: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao5, &img_dsc);
+            break;
+        }
+
+        case 42: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao6, &img_dsc);
+            break;
+        }
+
+        case 43: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao7, &img_dsc);
+            break;
+        }
+
+        case 44: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao8, &img_dsc);
+            break;
+        }
+
+        case 45: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Ao9, &img_dsc);
+            break;
+        }
+
+        case 46: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 47: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 48: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 49: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 50: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+
+
+
+        case 51: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw1, &img_dsc);
+            break;
+        }
+
+        case 52: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw2, &img_dsc);
+            break;
+        }
+
+        case 53: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw2, &img_dsc);
+            break;
+        }
+
+        case 54: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw3, &img_dsc);
+            break;
+        }
+
+        case 55: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw4, &img_dsc);
+            break;
+        }
+
+        case 56: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw5, &img_dsc);
+            break;
+        }
+
+        case 57: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw6, &img_dsc);
+            break;
+        }
+
+        case 58: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw7, &img_dsc);
+            break;
+        }
+
+        case 59: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw8, &img_dsc);
+            break;
+        }
+
+        case 60: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bw9, &img_dsc);
+            break;
+        }
+
+        case 61: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+        case 62: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+        case 63: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+        case 64: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+        case 65: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+        case 66: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+        case 67: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+
+        case 68: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bdraw, &img_dsc);
+            break;
+        }
+
+        case 69: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Baim, &img_dsc);
+            break;
+        }
+
+        case 70: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_flash, &img_dsc);
+            break;
+        }
+        case 71: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+        case 72: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bstanding, &img_dsc);
+            break;
+        }
+
+        case 73: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bhit, &img_dsc);
+            break;
+        }
+        case 74: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bhit, &img_dsc);
+            break;
+        }
+        case 75: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bhit, &img_dsc);
+            break;
+        }
+        case 76: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bhit, &img_dsc);
+            break;
+        }
+        case 77: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 78: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bhit, &img_dsc);
+            break;
+        }
+        case 79: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+
+        case 80: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Bhit, &img_dsc);
+            break;
+        }
+        case 81: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 82: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 83: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 84: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 85: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+
+        case 86: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw1, &img_dsc);
+            break;
+        }
+
+        case 87: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw2, &img_dsc);
+            break;
+        }
+
+        case 88: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw3, &img_dsc);
+            break;
+        }
+
+        case 89: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw4, &img_dsc);
+            break;
+        }
+
+        case 90: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw5, &img_dsc);
+            break;
+        }
+
+        case 91: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw6, &img_dsc);
+            break;
+        }
+
+        case 92: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw7, &img_dsc);
+            break;
+        }
+
+        case 93: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw8, &img_dsc);
+            break;
+        }
+
+        case 94: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cw9, &img_dsc);
+            break;
+        }
+
+        case 95: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 96: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 97: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 98: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 99: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 100: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 101: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 102: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 103: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 104: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 105: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 106: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 107: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 108: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+        case 109: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cstanding, &img_dsc);
+            break;
+        }
+
+        case 110: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Cdraw, &img_dsc);
+            break;
+        }
+
+        case 111: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Caim, &img_dsc);
+            break;
+        }
+
+        case 112: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Caim, &img_dsc);
+            break;
+        }
+
+        case 113: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_flash, &img_dsc);
+            break;
+        }
+
+        case 114: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit1, &img_dsc);
+            break;
+        }
+
+        case 115: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit2, &img_dsc);
+            break;
+        }
+
+        case 116: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit3, &img_dsc);
+            break;
+        }
+
+        case 117: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit4, &img_dsc);
+            break;
+        }
+
+        case 118: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit5, &img_dsc);
+            break;
+        }
+
+        case 119: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit6, &img_dsc);
+            break;
+        }
+
+        case 120: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit7, &img_dsc);
+            break;
+        }
+
+        case 121: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit8, &img_dsc);
+            break;
+        }
+
+        case 122: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit9, &img_dsc);
+            break;
+        }
+
+        case 123: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit10, &img_dsc);
+            break;
+        }
+
+        case 124: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit11, &img_dsc);
+            break;
+        }
+
+        case 125: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit12, &img_dsc);
+            break;
+        }
+        case 126: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit12, &img_dsc);
+            break;
+        }
+        case 127: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit12, &img_dsc);
+            break;
+        }
+        case 128: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit12, &img_dsc);
+            break;
+        }
+        case 129: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit12, &img_dsc);
+            break;
+        }
+        case 130: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit12, &img_dsc);
+            break;
+        }
+        case 131: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 132: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit12, &img_dsc);
+            break;
+        }
+        case 133: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+
+        case 134: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_Chit12, &img_dsc);
+            break;
+        }
+        case 135: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 136: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 137: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 138: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 139: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
+            break;
+        }
+        case 140: {
+            lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
             break;
         }
 
