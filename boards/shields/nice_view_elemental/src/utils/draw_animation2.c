@@ -1,4 +1,4 @@
-#include "../../include/utils/draw_animation2.c"
+#include "../../include/utils/draw_animation2.h"
 
 #include <lvgl.h>
 
