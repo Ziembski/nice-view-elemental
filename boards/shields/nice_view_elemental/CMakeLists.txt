@@ -37,7 +37,78 @@ if(CONFIG_ZMK_DISPLAY AND CONFIG_NICE_VIEW_WIDGET_STATUS)
     ./src/images/animation1_29.c
     ./src/images/animation1_30.c
     ./src/images/animation1_31.c
-    ./src/images/animation2_1.c    
+    ./src/images/animation2_1.c 
+	
+    ./src/images/animation2_background.c
+    ./src/images/animation2_flash.c
+	
+    ./src/images/animation2_Aaim.c
+	./src/images/animation2_Adraw.c
+	./src/images/animation2_Aflash.c
+	./src/images/animation2_Aflash2.c
+	./src/images/animation2_Aflash3.c
+	./src/images/animation2_Aholster.c
+	./src/images/animation2_Alaugh.c
+	./src/images/animation2_Astanding.c
+    ./src/images/animation2_Ao1.c
+    ./src/images/animation2_Ao2.c
+    ./src/images/animation2_Ao3.c
+    ./src/images/animation2_Ao4.c
+    ./src/images/animation2_Ao5.c
+    ./src/images/animation2_Ao6.c
+    ./src/images/animation2_Ao7.c
+    ./src/images/animation2_Ao8.c
+    ./src/images/animation2_Ao9.c
+	./src/images/animation2_Aw1.c
+    ./src/images/animation2_Aw2.c
+    ./src/images/animation2_Aw3.c
+    ./src/images/animation2_Aw4.c
+    ./src/images/animation2_Aw5.c
+    ./src/images/animation2_Aw6.c
+    ./src/images/animation2_Aw7.c
+    ./src/images/animation2_Aw8.c
+    ./src/images/animation2_Aw9.c
+	
+	./src/images/animation2_Bw1.c
+    ./src/images/animation2_Bw2.c
+    ./src/images/animation2_Bw3.c
+    ./src/images/animation2_Bw4.c
+    ./src/images/animation2_Bw5.c
+    ./src/images/animation2_Bw6.c
+    ./src/images/animation2_Bw7.c
+    ./src/images/animation2_Bw8.c
+    ./src/images/animation2_Bw9.c
+	./src/images/animation2_Baim.c
+	./src/images/animation2_Bdraw.c
+	./src/images/animation2_Bstanding.c
+	./src/images/animation2_Bhit.c
+	
+	./src/images/animation2_Cw1.c
+    ./src/images/animation2_Cw2.c
+    ./src/images/animation2_Cw3.c
+    ./src/images/animation2_Cw4.c
+    ./src/images/animation2_Cw5.c
+    ./src/images/animation2_Cw6.c
+    ./src/images/animation2_Cw7.c
+    ./src/images/animation2_Cw8.c
+    ./src/images/animation2_Cw9.c
+	./src/images/animation2_Caim.c
+	./src/images/animation2_Cdraw.c
+	./src/images/animation2_Cstanding.c
+    ./src/images/animation2_Chit1.c
+    ./src/images/animation2_Chit2.c
+    ./src/images/animation2_Chit3.c
+    ./src/images/animation2_Chit4.c
+    ./src/images/animation2_Chit5.c
+    ./src/images/animation2_Chit6.c
+    ./src/images/animation2_Chit7.c
+    ./src/images/animation2_Chit8.c
+    ./src/images/animation2_Chit9.c
+    ./src/images/animation2_Chit10.c
+    ./src/images/animation2_Chit11.c
+    ./src/images/animation2_Chit12.c
+
+	
     ./src/images/debug.c  
     ./src/images/bluetooth_logo_outlined.c
     ./src/images/bluetooth_logo.c
