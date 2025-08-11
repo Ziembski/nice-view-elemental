@@ -74,7 +74,7 @@ void draw_animation2(lv_obj_t* canvas, unsigned index) {
     lv_draw_img_dsc_t img_dsc;
     lv_draw_img_dsc_init(&img_dsc);
 
-    switch (index % 50) {
+    switch (index % 36) {
         case 1: {
             lv_canvas_draw_img(canvas, 0, 0, &animation2_background, &img_dsc);
             break;
